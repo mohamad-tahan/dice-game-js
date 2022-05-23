@@ -1,3 +1,4 @@
+if (performance.getEntriesByType("navigation")[0].type == "reload") {
 var randomDice1 = Math.floor(Math.random() * 6) + 1;
 var randomImage1 = "images/dice" + randomDice1 + ".png";
 
@@ -14,4 +15,4 @@ if (randomDice1 > randomDice2) {
   } else {
     document.getElementsByTagName("h1")[0].innerHTML = " Draw";
   }
-  
+}
