@@ -6,3 +6,12 @@ var randomImage2 = "images/dice" + randomDice2 + ".png";
 
 var image1 = document.querySelector(".img1").setAttribute("src", randomImage1);
 var image1 = document.querySelector(".img2").setAttribute("src", randomImage2);
+
+if (randomDice1 > randomDice2) {
+    document.getElementsByTagName("h1")[0].innerHTML = "Player 1 wins";
+  } else if (randomDice1 < randomDice2) {
+    document.getElementsByTagName("h1")[0].innerHTML = "Player 2 wins";
+  } else {
+    document.getElementsByTagName("h1")[0].innerHTML = "Draw";
+  }
+  
